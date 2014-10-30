@@ -4,7 +4,7 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{geometry}
-\geometry{verbose,a4paper,tmargin=25mm,bmargin=25mm,lmargin=15mm,rmargin=20mm}
+\geometry{verbose,a4paper,tmargin=25mm,bmargin=20mm,lmargin=15mm,rmargin=20mm}
 
 \DeclareMathOperator{\rect}{rect}
 \begin{document}
@@ -18,7 +18,7 @@
 \begin{align*}
   \mathcal{F}\{g(x)\}(k) = G(k) &= \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\!\!\! g(x) e^{-ikx} \textrm{d}x
 \end{align*}
-F\"ur mehr Dimensionsionen entsprechend der Vorlesung.
+F\"ur mehr Dimensionsionen gelte die Definition entsprechend der Vorlesung.
 
 \section{Fouriertransformierte von zwei Funktionen}
 Berechnen Sie die Fouriertransformierten der folgenden Funktionen.
@@ -44,7 +44,7 @@ Hinweise:
     $\mathcal{F}^{-1}\{1/k\}$.
 \end{itemize}
 
-\section{ Faltungstheorem}
+\section{Faltungstheorem}
 Es sei $\mathcal{F}\{f(x)\}(k)=F(k)$, $\mathcal{F}\{g(x)\}(k)=G(k)$. Zeigen Sie:
 \begin{align}
   \mathcal{F}\{f(x)\cdot g(x)\} &= F(k)\otimes G(k)=\int_{-\infty}^\infty\!\!\!\! F(\xi)G(k-\xi)
@@ -53,7 +53,9 @@ Es sei $\mathcal{F}\{f(x)\}(k)=F(k)$, $\mathcal{F}\{g(x)\}(k)=G(k)$. Zeigen Sie:
 
 
 \section{Wirkung des Laplace Operators }
-Zeigen Sie:
+Zeigen Sie, dass der Laplace Operator $\nabla^2 = \partial^2/\partial
+x^2 + \partial^2/\partial y^2$ im Fourierraum proportional zu einer
+Multiplikation mit einem quadratischen Funktion in $k$ ist:
 \begin{align}
   \mathcal{F}\{\nabla^2 g(x,y)\} &\propto (k_x^2+k_y^2) \mathcal{F}\{g(x,y)\}
 \end{align}
