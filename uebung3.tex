@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsopn}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{pdfpages}
+\usepackage{units}
+\geometry{verbose,a4paper,tmargin=25mm,bmargin=20mm,lmargin=15mm,rmargin=20mm}
+
+\DeclareMathOperator{\rect}{rect}
+\begin{document}
+\author{Martin Kielhorn}
+\title{\"Ubung 3 Licht-Mikroskopie (Prof. Heintzmann)}
+\maketitle
+
+\section{Strahlenoptik am Mikroskopobjektiv}
+Bestimmen Sie den Durchmesser der hinteren Brennebene (back focal
+plane) eines Zeiss-Mikroskopobjektivs mit Vergr\"o\ss erung $M=20$ und
+$NA=0.55$. Nutzen Sie dabei die Zeiss-Standard Tubusl\"ange
+$f_\textrm{TL}=\unit[164.5]{mm}$ um auf die Brennweite des Objektivs
+zu kommen.
+
+\section{Herschelbedingung}
+Alle von der optischen Achse ausgehenden Strahlen sollen unabh\"angig
+von ihrem Winkel $\phi$ eine longitudinale Vergr\"osserung $M$
+erfahren. Leiten Sie diese sogennante Herschelbedingung her. Kann man
+diese Bedingung f\"ur beliebig gro\ss e Winkel $\phi$ erf\"ullen?
+
+
+\section{Hauptebenen}
+Nutzen Sie die paraxiale Methode der ABCD Matrixanalyse um jeweils
+beide Hauptebenen zweier dicken Linsen $A$ und $B$ mit gleichen Brennweiten $f$
+aber verschiedenen Durchbiegungen $X=\frac{R_1+R_2}{R_2-R_1}$ zu
+ermitteln. Dabei beschreiben $R_1$ und $R_2$ die Radiien der vorderen
+und hinteren Oberfl\"ache.
+
+Wir w\"ahlen die folgenden Parameter: Brechzahl des Linsenmaterials
+$n=1.5$, Brennweite beider Linsen: $f=\unit[100]{mm}$, Dicke beider
+Linsen: $d=\unit[3]{mm}$ und Durchbiegungen der Linsen: $X_A=0$ und
+$X_B=4$.
+
+
+\section{Wellenoptik am Mikroskopobjektiv}
+Lesen Sie den ersten Teil der angeh\"angten Arbeit von A.~Sch\"onle
+und S.~Hell. Ermitteln Sie einen Ausdruck f\"ur die optische
+Transferfunktion eines Mikroskops.
+
+Vernachl\"assigen Sie alle vektoriellen Abh\"angigkeiten und gehen Sie
+von einer homogenen Pupillenfunktion aus. Das heisst setzen Sie in
+Formel $(1)$ der Arbeit $a_f(\vartheta,\varphi)=1$ und
+$P(\vartheta,\varphi)=\Theta(\alpha-\vartheta)$. Wobei $\alpha$ den halben
+\"Offnungswinkel des Objektiv beschreibt und $\Theta(x)$ sei die
+Heaviside Stufenfunktion:
+\begin{align}
+  \Theta(x)&=\begin{cases}
+  0, & x<0 \\
+  1, & x \ge 0
+  \end{cases}
+\end{align}
+Das Objektiv sei ein Luftobjektiv $(n=1)$.
+
+\includepdf[pages={1,2,3}]{2002schoenle.pdf}
+\end{document}
