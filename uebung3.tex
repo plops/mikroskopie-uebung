@@ -17,7 +17,7 @@
 \section{Strahlenoptik am Mikroskopobjektiv}
 Bestimmen Sie den Durchmesser der hinteren Brennebene (back focal
 plane) eines Zeiss-Mikroskopobjektivs mit Vergr\"o\ss erung $M=20$ und
-$NA=0.55$. Nutzen Sie dabei die Zeiss-Standard Tubusl\"ange
+$NA=0.55$ (Luft). Nutzen Sie dabei die Zeiss-Standard Tubusl\"ange
 $f_\textrm{TL}=\unit[164.5]{mm}$ um auf die Brennweite des Objektivs
 zu kommen.
 
@@ -27,24 +27,11 @@ von ihrem Winkel $\phi$ eine longitudinale Vergr\"osserung $M$
 erfahren. Leiten Sie diese sogennante Herschelbedingung her. Kann man
 diese Bedingung f\"ur beliebig gro\ss e Winkel $\phi$ erf\"ullen?
 
-
-\section{Hauptebenen}
-Nutzen Sie die paraxiale Methode der ABCD Matrixanalyse um jeweils
-beide Hauptebenen zweier dicken Linsen $A$ und $B$ mit gleichen Brennweiten $f$
-aber verschiedenen Durchbiegungen $X=\frac{R_1+R_2}{R_2-R_1}$ zu
-ermitteln. Dabei beschreiben $R_1$ und $R_2$ die Radiien der vorderen
-und hinteren Oberfl\"ache.
-
-Wir w\"ahlen die folgenden Parameter: Brechzahl des Linsenmaterials
-$n=1.5$, Brennweite beider Linsen: $f=\unit[100]{mm}$, Dicke beider
-Linsen: $d=\unit[3]{mm}$ und Durchbiegungen der Linsen: $X_A=0$ und
-$X_B=4$.
-
-
 \section{Wellenoptik am Mikroskopobjektiv}
 Lesen Sie den ersten Teil der angeh\"angten Arbeit von A.~Sch\"onle
 und S.~Hell. Ermitteln Sie einen Ausdruck f\"ur die optische
-Transferfunktion eines Mikroskops.
+Transferfunktion (OTF) der Detektion eines Fluoreszens-Mikroskops der
+nur noch ein Linienintegral enth\"alt.
 
 Vernachl\"assigen Sie alle vektoriellen Abh\"angigkeiten und gehen Sie
 von einer homogenen Pupillenfunktion aus. Das heisst setzen Sie in
@@ -59,6 +46,10 @@ Heaviside Stufenfunktion:
   \end{cases}
 \end{align}
 Das Objektiv sei ein Luftobjektiv $(n=1)$.
+
+\subsection*{Zusatz:}
+Berechnen Sie numerisch einen transversalen Schnitt entlang
+$\mathbf{k}=(k_x,0,0)$ durch die OTF $\lambda_{det}=\unit[500]{nm}$.
 
 \includepdf[pages={1,2,3}]{2002schoenle.pdf}
 \end{document}
