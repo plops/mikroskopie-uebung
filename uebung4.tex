@@ -6,6 +6,10 @@
 \usepackage{geometry}
 \usepackage{pdfpages}
 \usepackage{units}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{textcomp}
+%\usepackage{gensymb}
 \geometry{verbose,a4paper,tmargin=25mm,bmargin=20mm,lmargin=15mm,rmargin=20mm}
 
 \DeclareMathOperator{\rect}{rect}
@@ -16,7 +20,43 @@
 \noindent Diese \"Ubung ist abzugeben am 8.~Dez.~2014.
 
 \section{Abbe-Limit f\"ur Weitfeld-Fluoreszensmikroskop}
+Ermitteln Sie die z-Aufl\"osung ($k_{z\,\textrm{max}}$) eines
+Weitfeld-Fluoreszensmikroskops mit halben Aperturwinkel
+$\alpha=67^\circ$, Immersionsindex $n=1.518$ und Wellenl\"ange
+$\lambda=\unit[520]{nm}$.
+
+\begin{figure}[htbp]
+  \centering
+  \input{missing-cone.pdf_tex}
+  \caption{Geometrie zur Bestimmung des Supports der OTF f\"ur ein Weitfeld-Mikroskop.}
+  \label{fig:missing-cone}
+\end{figure}
+
+
 \section{Abbe-Limit f\"ur konfokales Fluoreszensmikroskop}
+\subsection*{a) infinitesemal kleines Pinhole}
+Ausgehend von $h_\textrm{ges}=h_\textrm{ex}\cdot h_\textrm{em}$ und
+damit
+$\widetilde h_\textrm{ges}=\widetilde h_\textrm{ex}\otimes\widetilde
+h_\textrm{em}$
+bestimmen Sie $k_{x\,\textrm{max}}$ und $k_{z\,\textrm{max}}$ f\"ur
+ein konfokales Fluoreszensmikroskop. Die Parameter seien: halber
+Aperturwinkel $\alpha=67^\circ$, Immersionsindex $n=1.518$,
+Anregungswellenl\"ange $\lambda_\textrm{ex}=\unit[488]{nm}$ und
+Detektionswellenl\"ange $\lambda_\textrm{em}=\unit[520]{nm}$.
+\subsection*{b) Pinholegr\"o\ss e eine Airy Einheit}
+Was \"andert sich, wenn das Pinhole auf eine Airy Einheit
+($\unit[1]{AU}=1.22\lambda/\textrm{NA}$) ge\"offnet wird?
+
 \section{Transmissionsmikroskop Streuung, Bornsche N\"aherung}
+Zeichnen Sie den Support der Objektraumfrequenzen f\"ur ein
+Transmissionsmikroskop mit Beleuchtungsapertur
+$\textrm{NA}_\textrm{ill} = 0.2$ und Detektionsapertur
+$\textrm{NA}_\textrm{ill} = 0.5$.
 \section{Reflexionsmikroskop Streuung, Bornsche N\"aherung}
+Zeichnen Sie den Support der Objektraumfrequenzen f\"ur ein
+Reflexionsmikroskop mit Beleuchtungsapertur
+$\textrm{NA}_\textrm{ill} = 0.2$ und Detektionsapertur
+$\textrm{NA}_\textrm{ill} = 0.5$.
+
 \end{document}
