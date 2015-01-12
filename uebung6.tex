@@ -11,7 +11,7 @@
 %\usepackage[T1]{fontenc}
 %\usepackage{textcomp}
 %\usepackage{gensymb}
-\geometry{verbose,a4paper,tmargin=5mm,bmargin=20mm,lmargin=15mm,rmargin=20mm}
+\geometry{verbose,a4paper,tmargin=-4mm,bmargin=0mm,lmargin=15mm,rmargin=12mm}
 
 \DeclareMathOperator{\rect}{rect}
 \begin{document}
@@ -26,7 +26,11 @@ Skizzieren Sie die Transferfunktion eines Fluoreszensmikroskops vom I5M-Typ.
 
 \subsection*{Theoretische Aufl\"osunggrenzen}
 
-Was ist die maximale Aufl\"osung (im $\mathbf{k}$-Raum und im Ortsraum als feinstes Objekt-Gitter) m\"oglich f\"ur Bildgebung nach der ersten Born'schen Näherung und bei Fluoreszenzbildgebung mit räumlich konstanter Beleuchtung und räumlich variierender Beleuchtung? Wie ist es möglich die letztere Grenze trotzdem zu umgehen?
+Was ist die maximale Aufl\"osung (im $\mathbf{k}$-Raum und im Ortsraum
+als feinstes Objekt-Gitter) m\"oglich f\"ur Bildgebung nach der ersten
+Born'schen N\"aherung und bei Fluoreszenzbildgebung mit r\"aumlich
+konstanter Beleuchtung und r\"aumlich variierender Beleuchtung? Wie ist
+es m\"oglich die letztere Grenze trotzdem zu umgehen?
 
 
 \section{Strukturierte Beleuchtung}
@@ -44,7 +48,7 @@ $2\pi\cdot 3/4$.
   \centering
   \input{sim-mixing.pdf_tex}
   \caption{\"Uberlagerung der drei Beugungsordnungen die aus einem
-    durch Zweistrahlintereferenz strukturiert beleuchtetem
+    durch Zweistrahlinterferenz strukturiert beleuchtetem
     Fluoreszensobjekt austreten (nach
     \cite{heintzmann1999laterally}).}
   \label{fig:sim-mixing}
@@ -53,17 +57,25 @@ $2\pi\cdot 3/4$.
 
 \paragraph{a)} 
 Skizzieren Sie, ausgehend von Abbildung \ref{fig:sim-mixing}, die
-drei weiteren Ortsfrequenzdiagramme f\"ur die anderen Beleuchtungsphasen 
+drei weiteren Ortsfrequenzdiagramme f\"ur die anderen Beleuchtungsphasen.
 
-\paragraph{b)}
-Notieren Sie die (lineare) Berechnungsvorschrift um aus den Bildern
-mit unterschiedlichen Beleuchtungsphasen auf die separierten Ordnungen
-zu schlie\ss en.
+\paragraph{b)} Wie erh\"alt man aus den vier Bildern $I_{0\ldots 3}$
+mit unterschiedlichen Beleuchtungsphasen die 0te Ordnung?
 
-\paragraph{c)}
-Stellen Sie die Separation der einzelnen Beugungskomponenten aus den
-Bildern mit verschiedenen Beleuchtungsphasen als $3\times 4$
-Unmixing-Matrix dar.
+\paragraph{c)} Geben Sie eine M\"oglichkeit an, um aus den Bildern die
+1te Ordnung zu bestimmen.
+
+\paragraph{d)} Stellen Sie ein Bildmodell der folgenden Form auf:
+\begin{align}
+\begin{pmatrix} I_0 \\ I_1 \\ I_2 \\ I_3 \end{pmatrix} &=
+M 
+\begin{pmatrix} C_{-1} \\ C_0 \\ C_1 \end{pmatrix} 
+\end{align}
+Schreiben sie die Elemente der Matrix $M$ auf. Wie kann man im
+allgemeinen nach den Komponenten $C_{-1}$, $C_0$ und $C_1$ aufl\"osen?
+Wie ber\"ucksichtigt man in diesem Fall eine nichtquadratische Matrix
+$M$?
+
 
 \bibliographystyle{plain}
 \bibliography{bib}
