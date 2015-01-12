@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage[ngerman]{babel}
 \usepackage{amsmath}
 \usepackage{amsopn}
 \usepackage{graphicx}
@@ -15,21 +16,31 @@
 \DeclareMathOperator{\rect}{rect}
 \begin{document}
 \author{Martin Kielhorn, Rainer Heintzmann}
-\title{\"Ubung 5 Licht-Mikroskopie (Prof. Heintzmann)}
+\title{\"Ubung 6 Licht-Mikroskopie (Prof. Heintzmann)}
 \maketitle
-\noindent Diese \"Ubung ist abzugeben am 12.~Jan.~2015.
+\noindent Diese \"Ubung ist abzugeben am 19.~Jan.~2015.
 
 \section{Transferfunktionen verschiedener Mikroskoptypen}
-\subsection*{Konfokales Fluoreszenzmikroskop}
-Skizzieren Sie die Transferfunktion eines konfokalen Fluoreszensmikroskops.
 \subsection*{Fluoreszenzbildgebung in $I^5M$}
 Skizzieren Sie die Transferfunktion eines Fluoreszensmikroskops vom I5M-Typ.
-\subsection*{Fluoreszenzbildgebung in 4Pi}
-Skizzieren Sie die Transferfunktion eines inkoherenten 4Pi-Mikroskops.
 
 \subsection*{Theoretische Aufl\"osunggrenzen}
 
 Was ist die maximale Aufl\"osung (im $\mathbf{k}$-Raum und im Ortsraum als feinstes Objekt-Gitter) m\"oglich f\"ur Bildgebung nach der ersten Born'schen Näherung und bei Fluoreszenzbildgebung mit räumlich konstanter Beleuchtung und räumlich variierender Beleuchtung? Wie ist es möglich die letztere Grenze trotzdem zu umgehen?
+
+
+\section{Strukturierte Beleuchtung}
+
+\begin{figure}[htbp]
+  \centering
+  \input{sim-mixing.pdf_tex}
+  \caption{\"Uberlagerung der drei Beugungsordnungen in einem
+    strukturiert beleuchtetem Fluoreszens-Mikroskopbilds (nach \cite{heintzmann1999laterally}).}
+  \label{fig:sim-mixing}
+\end{figure}
+
+\bibliographystyle{plain}
+\bibliography{bib}
 
 
 \end{document}
